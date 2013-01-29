@@ -71,7 +71,7 @@ else {
 		
 lastLat = lat; 
 lastLong = long; 
-updateStatus("Location successfully updated.");
+updateStatus("Location successfully updated");
 }
 
 function clearWatch() {
@@ -84,12 +84,12 @@ function clearWatch() {
 	
 function showMap() {
 	var imagine = document.getElementById("harta");
-	var url = "http://maps.googleapis.com/maps/api/staticmap?center=" + lastLat + "," + lastLong + "&size=400x400&sensor=true"
+	var url = "http://maps.googleapis.com/maps/api/staticmap?center=" + lastLat + "," + lastLong + "&size=300x300&scale=2&sensor=true&markers=color:blue%7C" + lastLat + "," + lastLong; 
 	// Set the map zoom level using a rough heuristic
 	var zoomlevel=14; // Start zoomed in almost all the way
 	//if (accuracy > 80) // Zoom out for less accurate positions
 	//zoomlevel -= Math.round(Math.log(accuracy/50)/Math.LN2);
-	url += "&zoom=" + zoomlevel + "&path=color:0x0000ff%7Cweight:5%7C" + firstLat + "," + firstLong + "%7C" + lastLat + "," + lastLong; // Add zoom level to the URL
+	url += "&zoom=" + zoomlevel + "&path=color:0x0000ff%7Cweight:5%7C" + firstLat + "," + firstLong + "%7C" + lastLat + "," + lastLong;
 	imagine.src = url;
 	imagine.className = "inherit"; 
 	             }
@@ -100,13 +100,13 @@ case 0:
 updateStatus("There was an error while retrieving your location: " + error.message);
 break;
 case 1:
-updateStatus("The user prevented this page from retrieving a location.");
+updateStatus("The user prevented this page from retrieving a location");
 break;
 case 2:
 updateStatus("The browser was unable to determine your location: " + error.message);
 break;
 case 3:
-updateStatus("The browser timed out before retrieving the location.");
+updateStatus("The browser timed out before retrieving the location");
 break;
 }
 }

@@ -27,7 +27,7 @@ img, object, embed, video {
 */
 
 /* Mobile Layout: 480px and below. */
-
+@media only screen and (max-width: 480px) {
 .gridContainer {
 	margin-left: auto;
 	margin-right: auto;
@@ -42,14 +42,18 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 	border-radius: 7px;
-	background-color: #003;
-	border-color: #06C;
+	background-image: url(../images/paper_3.png);
+	border-color: #CCC;
 	border-style: solid;
 	border-width: 2 px;
-	padding-left: 10px;
+	padding-left: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+			}
+#LayoutDiv1 #harta {
+	width: auto;
 				}
+			
 #LayoutDiv2 {
 	clear: both;
 	float: left;
@@ -59,15 +63,15 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 	border-radius: 7px;
-	background-color: #003;
-	border-color: #06C;
+	background-image: url(../images/paper_3.png);
+	border-color: #CCC;
 	border-style: solid;
 	border-width: 2 px;
-	padding-left: 10px;
+	padding-left: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	}
-
+}
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
@@ -83,11 +87,11 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 	border-radius: 7px;
-	background-color: #003;
-	border-color: #06C;
+	background-image: url(../images/paper_3.png);
+	border-color: #CCC;
 	border-style: solid;
 	border-width: 2 px;
-	padding-left: 10px;
+	padding-left: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	}
@@ -100,11 +104,11 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 	border-radius: 7px;
-	background-color: #003;
-	border-color: #06C;
+	background-image: url(../images/paper_3.png);
+	border-color: #CCC;
 	border-style: solid;
 	border-width: 2 px;
-	padding-left: 10px;
+	padding-left: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	}
@@ -127,13 +131,13 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 	border-radius: 7px;
-	background-color: #003;
-	border-color: #06C;
+	border-color: #CCC;
 	border-style: solid;
 	border-width: 2 px;
-	padding-left: 10px;
+	padding-left: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	background-image: url(../images/paper_3.png);
 			}
 #LayoutDiv2 {
 	clear: both;
@@ -144,12 +148,13 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 	border-radius: 7px;
-	background-color: #003;
-	border-color: #06C;
+	border-color: #CCC;
 	border-style: solid;
 	border-width: 2 px;
-	padding-left: 10px;
+	padding-left: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	background-image: url(../images/paper_3.png);
 	}
 }
+

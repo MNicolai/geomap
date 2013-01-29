@@ -38,24 +38,18 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 13px; line-height: 1.231; }
+body {
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.231;
+	background-image: url(../images/bo_play_pattern.png);
+	background-repeat: repeat;
+}
 
 body, button, input, select, textarea {
 	font-family: Georgia, "Times New Roman", Times, serif;
-	color: #09C;
-	background-color: #000;
+	color: #F60;
 }
-
-/* 
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate
- * Also: hot pink! (or customize the background color to match your design)
- */
-
-/* Dreamweaver: uncomment these if you do want to customize the selection highlight
- *::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
- *::selection { background: #fe57a1; color: #fff; text-shadow: none; }
- */
 
 /* =============================================================================
    Links
@@ -182,7 +176,13 @@ table button, table input { *overflow: auto; }
  * 2. Allow styling of clickable form elements in iOS
  */
 
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+	border-radius: 7px;
+	background-color: #FFF;
+	font-weight: bold;
+}
 
 /*
  * Consistent box sizing and appearance
@@ -216,30 +216,6 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
-
-
-/* ==|== primary styles =====================================================
-   Author: 
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==|== non-semantic helper classes ========================================
-   Please define your styles before this section.
-   ========================================================================== */
 
 /* For image replacement */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
